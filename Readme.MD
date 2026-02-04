@@ -49,6 +49,7 @@ Add the following configuration:
 Save and exit.
 
 2. Apply configuration changes
+
     sudo systemctl daemon-reload
     sudo systemctl restart ollama
 
