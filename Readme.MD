@@ -22,10 +22,6 @@ This step ensures the Ollama system service (running as the ollama user) can rea
     
         sudo mkdir -p /var/lib/ollama/models
 
-2. Confirm the Ollama service user exists
-
-        id ollama
-
 3. Set ownership and permissions
 
         sudo chown -R ollama:ollama /var/lib/ollama
@@ -40,7 +36,7 @@ C. Configure Ollama Using systemd Override
         sudo systemctl edit ollama
 
 
-Add the following configuration:
+Add the following configuration in between ### and ### don't add it bottom side:
 
     [Service]
     Environment="OLLAMA_HOST=0.0.0.0:11434"
