@@ -50,8 +50,8 @@ Save and exit.
 
 2. Apply configuration changes
 
-    sudo systemctl daemon-reload
-    sudo systemctl restart ollama
+        sudo systemctl daemon-reload
+        sudo systemctl restart ollama
 
 3. Verify effective configuration
     systemctl cat ollama
